@@ -29,3 +29,4 @@ document.onmousemove = function (e) {
 document.onmouseup = function () {
     dragging = false
 }
+

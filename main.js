@@ -14,6 +14,7 @@ div1.onmousedown = function (e) {
     dragging = true;
 }
 
+// 拖拽逻辑 
 document.onmousemove = function (e) {
     if (dragging === true) {
         var deltaX = e.clientX - initialX;

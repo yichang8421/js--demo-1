@@ -14,9 +14,10 @@ div1.onmousedown = function (e) {
     dragging = true;
 }
 
-// 拖拽逻辑编写
+// 拖拽逻辑
 document.onmousemove = function (e) {
     if (dragging === true) {
+//         水平垂直分量
         var deltaX = e.clientX - initialX;
         var deltaY = e.clientY - initialY;
         
@@ -25,7 +26,7 @@ document.onmousemove = function (e) {
         
         div1.style.top = top + deltaY + 'px';
         div1.style.left = left + deltaX + 'px';
-        
+//         重新初始化水平垂直分量
         initialX = e.clientX;
         initialY = e.clientY;
     }
